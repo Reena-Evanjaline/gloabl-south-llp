@@ -1,14 +1,13 @@
-import { Geist, Geist_Mono } from "next/font/google";
+
+import AddBootstrap from "./components/BootstrapClient";
 import "./globals.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Bricolage_Grotesque } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata = {
@@ -19,7 +18,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+     <body className={bricolage.className}>
+        <AddBootstrap/>
         {children}
       </body>
     </html>
