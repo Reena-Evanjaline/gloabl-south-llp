@@ -40,9 +40,11 @@ a {
     color-scheme: dark;
   }
 }
+
 .nav-link {
   position: relative;
-  color: #000 !important; /* initial black */
+  color: #000 !important;
+  /* initial black */
   transition: color 0.3s ease;
   text-decoration: none !important;
 }
@@ -55,17 +57,19 @@ a {
   bottom: 0;
   height: 2px;
   width: 0;
-  
+
   transition: width 0.3s ease;
   border-radius: 1px;
   /* Make sure it doesn't affect dropdown toggle arrow */
   z-index: 1;
 }
+
 .top-bar-wrapper {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .logo {
   padding: 0 !important;
   margin: 0 !important;
@@ -87,8 +91,10 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
-  position: relative; /* for underline */
-  z-index: 2; /* on top of underline */
+  position: relative;
+  /* for underline */
+  z-index: 2;
+  /* on top of underline */
 }
 
 .nav-link.dropdown-toggle::after {
@@ -133,22 +139,26 @@ a {
 
 .card-hover .image-container {
   overflow: hidden;
-  position: relative; /* important for next/image */
+  position: relative;
+  /* important for next/image */
 }
 
 .card-hover .image-container img {
   transition: transform 0.3s ease;
   /* Make sure image is displayed as block to avoid inline spacing issues */
   display: block;
-  will-change: transform; /* optimization */
+  will-change: transform;
+  /* optimization */
 }
 
 .card-hover:hover .image-container img {
   transform: scale(1.05);
 }
+
 /* Position dots slightly lower */
 .custom-swiper-pagination .swiper-pagination {
-  margin-top: 30px; /* adjust as needed */
+  margin-top: 30px;
+  /* adjust as needed */
   position: relative;
 }
 
@@ -156,7 +166,8 @@ a {
 .custom-swiper-pagination .swiper-pagination-bullet {
   width: 14px;
   height: 14px;
-  background-color: #00b7b1; /* your brand color */
+  background-color: #00b7b1;
+  /* your brand color */
   opacity: 0.5;
   transition: all 0.3s ease;
 }
@@ -165,6 +176,7 @@ a {
   opacity: 1;
   transform: scale(1.2);
 }
+
 .top-bar-wrapper {
   display: block;
 }
@@ -173,4 +185,66 @@ a {
   .top-bar-wrapper {
     display: none;
   }
+}
+
+@media only screen and (max-width: 570px) {
+  .desktop-view {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 571px) {
+  .mobile-view {
+    display: none;
+  }
+}
+.custom-heading {
+  font-size: 1.5rem; /* mobile */
+}
+
+.custom-paragraph {
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .custom-heading {
+    font-size: 2.5rem; /* desktop */
+  }
+
+  .custom-paragraph {
+    font-size: 1.25rem;
+  }
+}
+.custom-wordspace {
+  word-spacing: 15px;
+}
+
+@media (max-width: 768px) {
+  .custom-wordspace {
+    word-spacing: normal !important;
+  }
+}
+.hero-banner {
+  background-image: url('/images/ma-bg.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 60vh; /* for desktop and large screens */
+  padding: 0.5px 5%;
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    aspect-ratio: 16 / 9;
+    height: auto;
+  }
+}
+
+.banner-content {
+  background-color: rgba(0, 183, 177, 0.8);
+  color: white;
+  padding: 20px;
+  max-width: 600px;
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 8px;
 }

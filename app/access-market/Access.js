@@ -1,39 +1,42 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 
 function Access() {
   return (
     <>
+      {/* Hero Section */}
       <div
-        className="d-flex align-items-start justify-content-start text-white"
+        className="d-flex align-items-start justify-content-start text-white access-hero"
         style={{
           backgroundImage: 'url("/images/dist.png")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          height: '80vh',
           padding: '.5px 5%',
         }}
       >
         <div
+          className="access-overlay p-4"
           style={{
             backgroundColor: '#00b7b1',
             color: '#fff',
-            padding: '40px',
             maxWidth: '600px',
             borderBottomRightRadius: '40px',
             borderTopLeftRadius: '8px',
+            opacity: 0.8,
           }}
         >
           <div style={{ transform: 'skewY(1deg)' }}>
             <h1 className="fw-bold mb-4">ACCESS MARKET</h1>
-
           </div>
         </div>
       </div>
-      <div className='container-fluid mt-3'>
-        <div className='row'>
-          <div className='col-lg-6'>
+
+      {/* Content Section */}
+      <div className="container-fluid mt-3">
+        <div className="row">
+          <div className="col-lg-6">
             <Image
               src="/images/report-1.png"
               alt="Trade Mission"
@@ -42,14 +45,14 @@ function Access() {
               className="img-fluid rounded shadow mb-4"
             />
           </div>
-          <div className='col-lg-6'>
-            <section className="container">
-              <h2 className="mb-4  fw-bold">Access the Market Data</h2>
+          <div className="col-lg-6">
+            <section className="container text-justify">
+              <h2 className="mb-4 fw-bold">Access the Market Data</h2>
               <p>
                 Gain real-time insights into global trade flows, product trends, and emerging opportunities with our comprehensive market data access.
               </p>
 
-              <div className="row ">
+              <div className="row">
                 <div className="col-md-6">
                   <ul className="list-group list-group-flush">
                     <li className="list-group-item">
@@ -72,16 +75,11 @@ function Access() {
                       <br />
                       Track trade across major Indian and global ports.
                     </li>
-                    {/* <li className="list-group-item">
-                      <strong>Competitor Benchmarking</strong>
-                      <br />
-                      Discover top exporters/importers of specific goods.
-                    </li> */}
                   </ul>
                 </div>
 
                 <div className="col-md-6 mt-5">
-                  <table className="table table-bordered table-striped ">
+                  <table className="table table-bordered table-striped">
                     <thead className="table-dark">
                       <tr>
                         <th>Data Type</th>
@@ -105,37 +103,46 @@ function Access() {
                         <td>Pricing Trends</td>
                         <td>Average pricing trends by product and region.</td>
                       </tr>
-                      
                     </tbody>
                   </table>
                 </div>
               </div>
-
-              {/* <div className="bg-light p-4 mt-5 rounded shadow-sm">
-                <h4 className="text-success mb-3"> Who Can Use This?</h4>
-                <div className="row">
-                  <div className="col-md-6">
-                    <ul>
-                      <li> Exporters & Importers</li>
-                      <li> Trade Promotion Councils</li>
-                      <li>Market Analysts</li>
-                    </ul>
-                  </div>
-                  <div className="col-md-6">
-                    <ul>
-                      <li> Business Development Teams</li>
-                      <li> Government & Policy Makers</li>
-                    </ul>
-                  </div>
-                </div>
-              </div> */}
-
             </section>
           </div>
         </div>
       </div>
+
+     <style jsx>{`
+  .access-hero {
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media (max-width: 767px) {
+    .access-hero {
+      height: auto;
+      aspect-ratio: 16 / 9;
+      position: relative;
+    }
+
+    .access-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 20px;
+      width: 100%;
+    }
+  }
+
+  .text-justify {
+    text-align: justify;
+  }
+`}</style>
+
     </>
-  )
+  );
 }
 
-export default Access
+export default Access;

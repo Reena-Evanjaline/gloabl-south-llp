@@ -1,0 +1,37 @@
+.footer-hidden-mobile {
+  display: block;
+}
+
+@media (max-width: 767.98px) {
+  .footer-hidden-mobile {
+    display: none !important;
+  }
+
+  .mobile-footer-icons {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .mobile-footer-icons a {
+    color: #1f1f1f;
+  }
+}
+.mobile-footer-icons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 999;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+  padding-bottom: 5px;
+}
+@media (max-width: 767.98px) {
+  body {
+    padding-bottom: 60px; /* or match your footer height */
+  }
+}

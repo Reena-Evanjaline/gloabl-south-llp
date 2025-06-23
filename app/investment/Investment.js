@@ -15,36 +15,19 @@ function Investment() {
 
   return (
     <>
-      {/* Hero Section */}
-     <div
-                className="d-flex align-items-start justify-content-start text-white"
-                style={{
-                    backgroundImage: 'url("/images/invest.jpg")',
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    height: '65vh',
-                    padding: '.5px 5%',
-                }}
-            >
-                <div
-                    style={{
-                        backgroundColor: '#00b7b1',
-                        color: '#fff',
-                        padding: '40px',
-                        maxWidth: '600px',
-                        borderBottomRightRadius: '40px',
-                        borderTopLeftRadius: '8px',
-                    }}
-                >
-                    <div style={{ transform: 'skewY(1deg)' }}>
-                        <h1 className="fw-bold mb-4">INVESTMENT REPORTS</h1>
-                      
-                    </div>
-                </div>
+      {/* Responsive Banner */}
+      <div className="banner-wrapper position-relative w-100 text-white">
+        <div className="banner-inner d-flex align-items-start justify-content-start">
+          <div className="banner-content text-white p-4">
+            <div style={{ transform: 'skewY(1deg)' }}>
+              <h1 className="fw-bold mb-4">INVESTMENT REPORTS</h1>
             </div>
+          </div>
+        </div>
+      </div>
 
-      {/* Content Section */}
-      <div className="container my-5">
+      {/* Main Content */}
+      <div className="container my-5 justify-text">
         <div className="row">
           {/* Left Column */}
           <div className="col-lg-8">
@@ -73,7 +56,7 @@ function Investment() {
               <li>Chambers of commerce and international trade desks</li>
             </ul>
 
-            <h4><strong> Impact You Can Expect</strong></h4>
+            <h4><strong>Impact You Can Expect</strong></h4>
             <ul>
               <li>Increased investor engagement and qualified leads</li>
               <li>More persuasive value proposition for global investors</li>
@@ -92,11 +75,10 @@ function Investment() {
             >
               For Enquiries &nbsp; →
             </Button>
-
           </div>
 
           {/* Right Column */}
-          <div className="col-lg-4">
+          <div className="col-lg-4 mt-5 mt-lg-0">
             <Image
               src="/images/what.png"
               alt="Trade Mission"
@@ -112,6 +94,7 @@ function Investment() {
               <li>Sectoral ministries</li>
               <li>FDI-ambitious city/regional govts</li>
             </ul>
+
             <h4><strong>Why Partner With Us?</strong></h4>
             <ul>
               <li>Proven experience in trade facilitation</li>
@@ -119,14 +102,11 @@ function Investment() {
               <li>Diplomatic-style engagement with a business-first approach</li>
               <li>On-ground presence with multilingual, cross-cultural teams</li>
             </ul>
-
-            {/* Button */}
-
           </div>
         </div>
       </div>
 
-      {/* Modal */}
+      {/* Enquiry Modal */}
       <Modal show={show} onHide={handleClose} centered size="lg">
         <Modal.Header closeButton>
           <Modal.Title>For Enquiries</Modal.Title>
@@ -163,16 +143,62 @@ function Investment() {
             ].map((label, i) => (
               <Form.Group className="mb-3" key={i}>
                 <Form.Label>{label}</Form.Label>
-                <Form.Control required type="text" placeholder={label} />
+                <Form.Control
+                  as={label === 'Details of Service Required' ? 'textarea' : 'input'}
+                  type="text"
+                  placeholder={label}
+                  required
+                />
               </Form.Group>
             ))}
 
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
+            <Button variant="primary" type="submit">Submit</Button>
           </Form>
         </Modal.Body>
       </Modal>
+
+      {/* Responsive Banner Styles */}
+      <style jsx>{`
+        .justify-text {
+          text-align: justify;
+        }
+        .banner-wrapper {
+          width: 100%;
+        }
+        .banner-inner {
+          background-image: url("/images/invest.jpg");
+          background-size: cover;
+          background-position: center;
+          padding: 0.5px 5%;
+        }
+        .banner-content {
+          background-color: #00b7b1;
+          max-width: 600px;
+          border-bottom-right-radius: 40px;
+          border-top-left-radius: 8px;
+          opacity: 0.85;
+        }
+
+        @media (min-width: 992px) {
+          .banner-inner {
+            height: 65vh;
+          }
+        }
+
+        @media (max-width: 991px) {
+          .banner-inner {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+          }
+
+          .banner-inner .banner-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      `}</style>
     </>
   );
 }

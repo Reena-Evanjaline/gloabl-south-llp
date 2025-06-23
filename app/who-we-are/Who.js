@@ -20,10 +20,11 @@ function Who() {
           style={{
             backgroundColor: '#00b7b1',
             color: '#fff',
-            padding: '40px',
+            padding: '20px',
             maxWidth: '600px',
             borderBottomRightRadius: '40px',
             borderTopLeftRadius: '8px',
+             opacity: 0.8,
           }}
         >
           <div style={{ transform: 'skewY(1deg)' }}>

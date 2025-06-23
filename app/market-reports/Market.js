@@ -18,26 +18,8 @@ function Market() {
   return (
     <>
       {/* Hero Section */}
-      <div
-        className="d-flex align-items-start justify-content-start text-white"
-        style={{
-          backgroundImage: 'url("/images/ma-bg.png")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          height: '60vh',
-          padding: '.5px 5%',
-        }}
-      >
-        <div
-          style={{
-            backgroundColor: '#00b7b1',
-            color: '#fff',
-            padding: '40px',
-            maxWidth: '600px',
-            borderBottomRightRadius: '40px',
-            borderTopLeftRadius: '8px',
-          }}
-        >
+      <div className="d-flex align-items-start justify-content-start text-white hero-banner">
+        <div className="banner-content">
           <div style={{ transform: 'skewY(1deg)' }}>
             <h1 className="fw-bold mb-4">Market Reports</h1>
           </div>
@@ -45,47 +27,46 @@ function Market() {
       </div>
 
       {/* Content */}
-      <h1 className="text-center mt-3" style={{fontSize:"55px"}}>Market Reports</h1>
-      <div className="container mt-4">
+      <h1 className="text-center mt-1" style={{ fontSize: '55px' }}>Market Reports</h1>
+      <div className="container mt-2" style={{ textAlign: 'justify' }}>
         <div className="row">
           {/* Left Column */}
           <div className="col-lg-7">
             <p style={{ textAlign: 'justify' }}>
               <h2><strong>Research-Backed Market Intelligence, Designed for Decision-Makers</strong></h2>
-              
               At the core of our research practice lies design thinking — we start with the client's
               needs in mind, even before the assignment begins. Our Terms of Reference are shaped by
               proactive engagement and a deep understanding of the business challenge.
             </p>
 
             <p style={{ textAlign: 'justify' }}>
-              <h2><strong> What Sets Us Apart?</strong></h2>
+              <h2><strong>What Sets Us Apart?</strong></h2>
               <br />
               <strong>Narrow Focus, Deep Insight:</strong> Our market investigations are sharply
               focused, allowing us to dive deep into specifics that truly matter.
             </p>
 
             <p style={{ textAlign: 'justify' }}>
-             <h2> <strong>Beyond Desk Research:</strong></h2> We don’t just rely on published data. Our team
+              <h2><strong>Beyond Desk Research:</strong></h2> We don’t just rely on published data. Our team
               actively meets relevant industry stakeholders to gather first-hand insights.
             </p>
 
             <p style={{ textAlign: 'justify' }}>
-              <h2><strong>Validated & Refined:</strong> All primary and secondary information is</h2>
-              validated and enhanced with the expertise of our in-house researchers.
+              <h2><strong>Validated & Refined:</strong></h2>
+              All primary and secondary information is validated and enhanced with the expertise of our in-house researchers.
             </p>
 
             <p style={{ textAlign: 'justify' }}>
-              <h2><strong> Our Market Research Services Include:</strong></h2>
+              <h2><strong>Our Market Research Services Include:</strong></h2>
             </p>
 
             <ul style={{ textAlign: 'justify', listStyleType: 'disc', paddingLeft: '20px' }}>
-              <li> Market Sizing & Forecasting</li>
-              <li> Trend Analysis & Competitive Landscape</li>
-              <li> Key Market Participants Overview</li>
+              <li>Market Sizing & Forecasting</li>
+              <li>Trend Analysis & Competitive Landscape</li>
+              <li>Key Market Participants Overview</li>
               <li>Raw Material & Production Environment Study</li>
-              <li> Infrastructure & Location Intelligence</li>
-              <li> Geo-Political Climate Impact Reports</li>
+              <li>Infrastructure & Location Intelligence</li>
+              <li>Geo-Political Climate Impact Reports</li>
             </ul>
 
             <p style={{ textAlign: 'justify' }}>
@@ -94,13 +75,11 @@ function Market() {
             </p>
 
             <p style={{ textAlign: 'justify' }}>
-              <h2><strong> Exclusive Insights & Short Reports</strong></h2>
+              <h2><strong>Exclusive Insights & Short Reports</strong></h2>
               <br />
               Our reports are concise, precise, and delivered in an executive-friendly format. Where
               possible, we include interviews with key stakeholders (subject to their consent).
             </p>
-
-            
 
             {/* Modal */}
             <Modal show={show} onHide={handleClose} centered size="lg">
@@ -152,7 +131,7 @@ function Market() {
           </div>
 
           {/* Right Column */}
-          <div className="col-lg-5">
+          <div className="col-lg-5" style={{ textAlign: 'justify' }}>
             <Image
               src="/images/market-banner.png"
               alt="Market Reports"
@@ -166,7 +145,7 @@ function Market() {
               confidentiality and integrity
             </p>
 
-            <button className="btn btn-outline-light bg-primary px-4 py-2 rounded-pill" onClick={handleShow}>
+            <button className="btn btn-outline-light bg-primary px-2 py-1 rounded-pill" onClick={handleShow}>
               For Enquiries &nbsp; <span>&rarr;</span>
             </button>
           </div>

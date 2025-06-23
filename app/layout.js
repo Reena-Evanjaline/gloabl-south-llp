@@ -1,4 +1,5 @@
 
+import Script from "next/script";
 import AddBootstrap from "./components/BootstrapClient";
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,6 +19,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Load PDF.js before React components render */}
+        <Script
+          src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"
+          strategy="beforeInteractive"
+          // Optionally add integrity + crossOrigin if you have SRI hash:
+          // integrity="sha512-..."
+          // crossOrigin="anonymous"
+        />
+      </head>
      <body className={bricolage.className}>
         <AddBootstrap/>
         {children}
