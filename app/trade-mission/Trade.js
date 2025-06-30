@@ -47,7 +47,7 @@ function Trade() {
             <h2 className="mt-2"><strong>Our Trade Mission Services Include:</strong></h2>
 
             <p>✅ <strong>Curated B2B Meetings:</strong><br /> Engage in one-on-one sessions with vetted Indian enterprises — importers, distributors, OEMs, and channel partners.</p>
-            <p>✅ <strong>G2G & Institutional Delegations:</strong><br /> Meetings arranged with relevant government counterparts to enhance bilateral cooperation and sectoral partnerships.</p>
+            <p>✅ <strong>G2G & Institutional Delegations:</strong><br /> Meetings arranged with relevant Government counterparts to enhance bilateral cooperation and sectoral partnerships.</p>
             <p>✅ <strong>NGO Delegations:</strong><br /> Support in connecting with appropriate communities and institutions aligned with your mission or outreach objectives.</p>
             <p>✅ <strong>Networking with Trade Bodies:</strong><br /> Connect with chambers of commerce, sector-specific associations, and export promotion councils.</p>
             <p>✅ <strong>Exclusive Briefings:</strong><br /> Closed-door sessions with nodal ministries, business consultants, attorneys, and auditors to understand legal, tax, and regulatory environments.</p>
@@ -124,7 +124,7 @@ function Trade() {
             <h2><strong>Impact You Can Expect</strong></h2>
             <ul>
               <li className="mt-2">Increased investor engagement and qualified leads</li>
-              <li className="mt-2">More persuasive value proposition for global investors</li>
+              <li className="mt-2">More persuasive value proposition for Global Investors</li>
               <li className="mt-2">Enhanced visibility among strategic sectors and geographies</li>
             </ul>
 

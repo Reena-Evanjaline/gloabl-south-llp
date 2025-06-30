@@ -64,7 +64,7 @@ function Trade() {
           <div className="col-lg-8 text-justify">
             <h1 className="mt-3">Personalized buyer meetings</h1>
             <p>Have you ever thought about a business guide akin to a tourist guide? Yes, we offer those services to handhold visiting enterprises and help them navigate their business engagements with ease during their tour. Though we might be seen as merely optimizing a tour schedule, our role goes far beyond that.</p>
-            <p>Once we identify your interest in availing our services, you can send us a precise request detailing the types of people or organizations you wish to meet — such as manufacturers, distributors, service providers, or government departments.</p>
+            <p>Once we identify your interest in availing our services, you can send us a precise request detailing the types of people or organizations you wish to meet — such as manufacturers, distributors, service providers, or Government departments.</p>
             <p>We analyze your request within a reasonable time frame and get back to you regarding the feasibility of taking up the assignment.</p>
             <p>If we proceed, the tour date is finalized in mutual consultation, considering local factors and schedules.</p>
             <p>You will receive regular updates regarding the tour program, the areas being covered, and the key buyers or stakeholders we are targeting.</p>
@@ -73,7 +73,7 @@ function Trade() {
             <p>Advance information to potential buyers allows you to enter serious discussions directly and more efficiently.</p>
             <p>Non-serious or irrelevant buyers are filtered out at the outset, saving your time and resources.</p>
             <p>You can choose whether to meet buyers at your location or visit theirs — we can facilitate both arrangements.</p>
-            <p>We also assist in securing appointments with government officials if needed.</p>
+            <p>We also assist in securing appointments with Government officials if needed.</p>
             <p>Media personnel looking to connect with specific entities for business-related coverage can also use our services.</p>
             <p>Post-meeting follow-ups, including coordination for sending and receiving samples, can be facilitated by us as well.</p>
 

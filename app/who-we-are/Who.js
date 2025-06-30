@@ -50,7 +50,7 @@ function Who() {
 
             <h2><strong>Our Vision</strong></h2>
             <p style={{ textAlign: 'justify' }}>
-              A world where global business is driven by transparency, trust, and shared value. We envision a thriving ecosystem of small and medium enterprises tapping into new markets with confidence.
+              A world where Global Business is driven by transparency, trust, and shared value. We envision a thriving ecosystem of small and medium enterprises tapping into new markets with confidence.
             </p>
 
             <h2><strong>What We Offer</strong></h2>

@@ -43,7 +43,7 @@ function Faq() {
       answer: "We have handled more than 100 Trade Missions. They are a great window to analyze business opportunities and build local buyer relationships."
     },
     {
-      question: "Do you undertake liasoning with local governments to participate in tenders?",
+      question: "Do you undertake liasoning with local Governments to participate in tenders?",
       answer: "Yes, we do that on a case-by-case basis."
     },
     {

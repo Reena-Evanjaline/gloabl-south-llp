@@ -43,11 +43,10 @@ function Management() {
     <div className="container my-3" style={{ textAlign: 'justify' }}>
       <h2 className="fw-bold">INTERNATIONAL TRADE FACILITATION ORGANIZATION</h2>
       <p>
-        We are an INTERNATIONAL TRADE FACILITATION ORGANIZATION committed to helping businesses—especially SMEs—expand their footprint in India and beyond. Operated by seasoned professionals with over 20 years of experience, we offer strategic, value-driven services to ensure efficient market entry and sustained growth.
-        Whether you're a foreign business exploring Indian opportunities or a domestic firm aiming for global outreach, we act as your extended trade arm—offering satellite office support, market insights, buyer matchmaking, trade missions, government liaison, and more.
-        Our market reports deliver sharp, bird’s-eye insights not readily available in the public domain, and our roadshows and campaigns are curated using design thinking for maximum impact—not just event execution.
-        We work with embassies, trade bodies, chambers, and businesses of all sizes—from startups to large enterprises—on a flexible fee model: assignment-based or annual subscription.
-        Get in touch today—submit an inquiry and our team will guide you forward.
+        We are an INTERNATIONAL TRADE FACILITATION ORGANIZATION committed to helping Businesses—Especially SMEs—expand their footprint in India and beyond. Operated by seasoned professionals with over 20 years of experience, we offer Strategic, value-driven services to ensure efficient market entry and Sustained Growth.
+        Whether you're a Foreign Business exploring Indian opportunities or a Domestic Firm Aiming for Global Outreach, we act as your extended trade Arm—Offering Satellite Office Support, Market Insights, Buyer Matchmaking, Trade Missions, Government Liaison, and more.
+        Our Market Reports Deliver Sharp, Bird’s-Eye Insights not readily available in the Public Domain, and our Roadshows and Campaigns are curated using design thinking for maximum impact—not just event execution.
+        We work with Embassies, Trade bodies, Chambers, and Businesses of all sizes—from startups to large Enterprises.
       </p>
 
       {/* Desktop View */}

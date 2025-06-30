@@ -40,7 +40,7 @@ function Online() {
           <div className="col-lg-8 px-5">
             <h2 className="mb-1 fw-bold">Online Mall – Product Gallery & Video Showcase</h2>
             <p className="mb-1 text-justify">
-              Step into our <strong>Interactive Online Mall</strong> – your one-stop digital destination to explore global products, innovations, and solutions.
+              Step into our <strong>Interactive Online Mall</strong> – your one-stop digital destination to explore Global Products, Innovations, and Solutions.
             </p>
 
             <h3 className="mt-4 mb-3 fw-bold">Product Gallery</h3>

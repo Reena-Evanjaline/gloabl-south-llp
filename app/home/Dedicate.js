@@ -1,8 +1,16 @@
 'use client';
 import React from 'react';
-import Image from 'next/image';
 
 function Dedicate() {
+  const cards = [
+    { title: 'Market Reports' },
+    { title: 'Satelite Office' },
+    { title: 'Trade Mission' },
+    { title: 'Personalized Buyer Meetings' },
+    { title: 'Distributor Importer Reports' },
+    { title: 'Investment Destination Promotion' },
+  ];
+
   return (
     <div className="py-5 text-center" style={{ backgroundColor: "#f1f0ec" }}>
       <div className="container px-3">
@@ -10,26 +18,27 @@ function Dedicate() {
         <div className="border-bottom border-3 border-info w-25 mx-auto my-3"></div>
 
         <div className="row g-4 justify-content-center mb-4">
-          {[
-            { src: '/images/targetting.png', alt: 'Targeting' },
-            { src: '/images/trade.png', alt: 'Trade' },
-            { src: '/images/develop.png', alt: 'Develop' },
-            { src: '/images/inbound.png', alt: 'Inbound' },
-            { src: '/images/investment.png', alt: 'Investment' },
-          ].map((item, index) => (
+          {cards.map((item, index) => (
             <div className="col-12 col-sm-6 col-lg-4" key={index}>
               <div
-                className="bg-white rounded shadow-sm p-3"
-                style={{ width: '100%', height: '200px', position: 'relative', overflow: 'hidden' }}
+                className="card custom-card h-100 shadow-sm border-0"
+                style={{
+                  borderTop: '5px solid #0dcaf0',
+                  borderRadius: '12px',
+                  transition: 'transform 0.3s, box-shadow 0.3s',
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.transform = 'translateY(-5px)';
+                  e.currentTarget.style.boxShadow = '0 8px 20px rgba(0,0,0,0.15)';
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.transform = 'none';
+                  e.currentTarget.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+                }}
               >
-                <Image
-                  src={item.src}
-                  alt={item.alt}
-                  fill
-                  style={{ objectFit: 'contain' }}
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  priority={index === 0}
-                />
+                <div className="card-body d-flex justify-content-center align-items-center">
+                  <h5 className="card-title fw-bold text-dark m-0">{item.title}</h5>
+                </div>
               </div>
             </div>
           ))}

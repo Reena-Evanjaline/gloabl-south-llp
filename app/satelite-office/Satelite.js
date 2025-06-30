@@ -67,10 +67,10 @@ function Satelite() {
             </p>
 
             <h2 className="fw-bold mt-4">Satellite Office Services in India</h2>
-            <small className="text-muted">Your Local Presence. Our Strategic Support.</small>
+            <small className="">Your Local Presence. Our Strategic Support.</small>
 
             <p className="mt-3">
-              While satellite offices are a proven global concept...
+              While satellite offices are a proven Global concept...
             </p>
 
             <h2 className="fw-bold mt-4">What We Offer:</h2>

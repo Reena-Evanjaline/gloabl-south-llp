@@ -49,7 +49,7 @@ function Testimonials() {
       answer: "Handled 100+ missions—great for analyzing opportunities and forging buyer connections.",
     },
     {
-      question: "Do you liaise with local governments?",
+      question: "Do you liaise with local Governments?",
       answer: "Yes, on a case-by-case basis, especially for tenders and formal entry.",
     },
     {

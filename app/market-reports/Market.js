@@ -40,7 +40,7 @@ function Market() {
             </p>
 
             <p style={{ textAlign: 'justify' }}>
-              <h2><strong>What Sets Us Apart?</strong></h2>
+              <h2><strong>What Sets us Apart?</strong></h2>
               <br />
               <strong>Narrow Focus, Deep Insight:</strong> Our market investigations are sharply
               focused, allowing us to dive deep into specifics that truly matter.
@@ -133,7 +133,7 @@ function Market() {
           {/* Right Column */}
           <div className="col-lg-5" style={{ textAlign: 'justify' }}>
             <Image
-              src="/images/market-banner.png"
+              src="/images/m.png"
               alt="Market Reports"
               width={600}
               height={300}

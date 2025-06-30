@@ -21,7 +21,7 @@ function Partner() {
             Your External Investment Desk in India
           </h1>
           <p className="custom-paragraph" style={{textAlign: 'justify'}}>
-            We represent governments, investment agencies, economic zones, and chambers of commerce to attract foreign investment and promote regional companies in the Indian market. Acting as your dedicated trade and investment desk, we position your region or sector to the right investor groups, manage inbound inquiries, and build lasting interest from credible businesses.
+            We represent Governments, investment agencies, economic zones, and chambers of commerce to attract foreign investment and promote regional companies in the Indian market. Acting as your dedicated Trade and Investment desk, we position your region or sector to the right investor groups, manage inbound inquiries, and build lasting interest from credible businesses.
           </p>
         </div>
       </div>

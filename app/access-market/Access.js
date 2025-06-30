@@ -49,7 +49,7 @@ function Access() {
             <section className="container text-justify">
               <h2 className="mb-4 fw-bold">Access the Market Data</h2>
               <p>
-                Gain real-time insights into global trade flows, product trends, and emerging opportunities with our comprehensive market data access.
+                Gain real-time insights into Global Trade Flows, product trends, and emerging opportunities with our comprehensive market data access.
               </p>
 
               <div className="row">
@@ -73,7 +73,7 @@ function Access() {
                     <li className="list-group-item">
                       <strong>Port-wise Traffic Data</strong>
                       <br />
-                      Track trade across major Indian and global ports.
+                      Track trade across major Indian and Global ports.
                     </li>
                   </ul>
                 </div>

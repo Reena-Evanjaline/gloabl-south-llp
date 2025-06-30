@@ -59,12 +59,12 @@ function Investment() {
             <h4><strong>Impact You Can Expect</strong></h4>
             <ul>
               <li>Increased investor engagement and qualified leads</li>
-              <li>More persuasive value proposition for global investors</li>
+              <li>More persuasive value proposition for Global Investors</li>
               <li>Enhanced visibility among strategic sectors and geographies</li>
             </ul>
 
             <p>
-              As a Trade Office–style representative, we work alongside governments, investment promotion agencies, economic zones, and chambers of commerce to position their regions as prime destinations for foreign investment and promote the resident Company’s product in the Indian Market.
+              As a Trade Office–style representative, we work alongside Governments, investment promotion agencies, economic zones, and chambers of commerce to position their regions as prime destinations for foreign investment and promote the resident Company’s product in the Indian Market.
             </p>
             <p>
               We act as your external investment desk — promoting your region or sector to targeted investor groups, managing inquiries, and nurturing long-term interest from credible firms.
