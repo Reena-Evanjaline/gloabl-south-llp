@@ -70,10 +70,11 @@ export default function Navbar() {
           <div className="top-bar-wrapper">
             <div className="bg-dark text-white d-flex justify-content-between align-items-center px-4 py-2 rounded-start-pill ms-2">
               <div>
-                <span className="me-4">📞 01892 673 435</span>
+               
                 <span onClick={handleShow} style={{ cursor: 'pointer' }}>
                   📧 Online Enquiry
                 </span>
+                <san className="ms-3">info@raceinnovations.in</san>
               </div>
 
               <div className="d-flex align-items-center">

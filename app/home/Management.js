@@ -7,58 +7,85 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-function Management() {
+export default function Management() {
   const services = [
     {
       title: 'MARKET REPORTS',
       description:
-        'Include Market reports, Investigation verification reports , distributor / importer -exporters reports, Product sourcing reports ',
+        'INCLUDE  MARKET  REPORTS, INVESTIGATION VERIFICATION REPORTS , DISTRIBUTOR / INPORTER -EXPORTERS REPORTS, PRODUCT SOURCING REPORTS ',
       image: '/images/sub-b.png',
       link: '/market-reports',
     },
     {
       title: 'TRADE MISSION',
       description:
-        'Include SATELLITE Office space provision, personalised buyer- seller meeting, launch , promotion campaign, market entry assistance,',
+        'GOVERNMENT HEADED TRADE MISSIONS INDUSTRY SPECIFIC TRADE MISSION PRODUCT SPECIFIC TRADE MISSION MULTISECTOR TRADE MISSION CHAMBER OF COMMERCE LEAD MISSION ASSOCIATION LEAD TRADE MISSION.',
       image: '/images/sub-4.png',
       link: '/trade-mission',
     },
     {
       title: 'INVESTMENT',
       description:
-        'Include investment support , destination promotion , "Trade Facilitation", Trade office outsourcing, product sourcing  ',
+        'PROMOTING FOREIGN PROVINCES, INDUSTRIAL ZONE AS INVESTMENT DESTINATION SEMINARS & ROAD SHOWS SUPPORT FOR COMPANY INCORPORATION SPECIAL VISA PROGRAM.',
       image: '/images/sub-2.png',
       link: '/investment',
     },
     {
       title: 'PERSONALIZED SERVICES',
       description:
-        'Automotive, Capital & Industrial goods, Cosmetics, Infrastructure, AI & Machine Learning, Semiconductor, Electronics.',
+        'HANDHOLD VISITING ENTERPRISES, REPRESENTATION IN EXHIBITIONS, IMPORTER REPORTS, CATALOG & SAMPLES DISTRIBUTION, ECOMMERCE LISTING, PRODUCT SOURCING.',
       image: '/images/sub-3.png',
       link: '/personalized',
+    },
+    {
+      title: 'COMPLIANCES',
+      description:
+        'COMPANY INCORPORATION WITH REGISTRAR OF COMPANIES IE CODE FACILITATION WITH DIRECTORATE GENERAL OF FOREIGN TRADE VENDOR EMPANELLEMENT WITH PRIVATE ENTITIES / GOVT. UNDERTAKINGS.',
+      image: '/images/c.png',
+      link: '/export-consulting',
     },
   ];
 
   return (
-    <div className="container my-3" style={{ textAlign: 'justify' }}>
-      <h2 className="fw-bold">INTERNATIONAL TRADE FACILITATION ORGANIZATION</h2>
-      <p>
-        We are an INTERNATIONAL TRADE FACILITATION ORGANIZATION committed to helping Businesses—Especially SMEs—expand their footprint in India and beyond. Operated by seasoned professionals with over 20 years of experience, we offer Strategic, value-driven services to ensure efficient market entry and Sustained Growth.
-        Whether you're a Foreign Business exploring Indian opportunities or a Domestic Firm Aiming for Global Outreach, we act as your extended trade Arm—Offering Satellite Office Support, Market Insights, Buyer Matchmaking, Trade Missions, Government Liaison, and more.
-        Our Market Reports Deliver Sharp, Bird’s-Eye Insights not readily available in the Public Domain, and our Roadshows and Campaigns are curated using design thinking for maximum impact—not just event execution.
-        We work with Embassies, Trade bodies, Chambers, and Businesses of all sizes—from startups to large Enterprises.
+    <div className="container">
+      <h2 className="fw-bold ">
+        INTERNATIONAL TRADE FACILITATION ORGANIZATION
+      </h2>
+      <p className="">
+        We are an INTERNATIONAL TRADE FACILITATION ORGANIZATION committed to helping Businesses—Especially SMEs—expand their footprint in India and beyond. Operated by seasoned professionals with over 20 years of experience, we offer Strategic, value-driven services to ensure efficient market entry and Sustained Growth. Whether you're a Foreign Business exploring Indian opportunities or a Domestic Firm Aiming for Global Outreach, we act as your extended trade Arm—Offering Satellite Office Support, Market Insights, Buyer Matchmaking, Trade Missions, Government Liaison, and more. Our Market Reports Deliver Sharp, Bird’s-Eye Insights not readily available in the Public Domain, and our Roadshows and Campaigns are curated using design thinking for maximum impact—not just event execution. We work with Embassies, Trade bodies, Chambers, and Businesses of all sizes—from startups to large Enterprises.
       </p>
 
       {/* Desktop View */}
-      <div className="row mt-4 d-none d-md-flex">
+      <div
+        className="d-none d-md-flex mt-4"
+        style={{
+          display: 'flex',
+          flexWrap: 'nowrap',
+          gap: '16px',
+        }}
+      >
         {services.map((item, index) => (
-          <div key={index} className="col-md-3 mb-4">
+          <div
+            key={index}
+            style={{
+              flex: '1 0 20%',
+              minWidth: '200px',
+              maxWidth: '20%',
+            }}
+          >
             <Link href={item.link} passHref legacyBehavior>
-              <a style={{ textDecoration: 'none', color: 'inherit' }}>
-                <div className="card border-0 shadow rounded overflow-hidden card-hover">
+              <a
+                style={{
+                  textDecoration: 'none',
+                  color: 'inherit',
+                  display: 'block',
+                  height: '100%',
+                }}
+              >
+                <div className="card border-0 shadow rounded overflow-hidden h-100">
                   <div
                     className="image-container"
-                    style={{ height: '220px', position: 'relative' }}
+                    style={{ height: '180px', position: 'relative' }}
                   >
                     <Image
                       src={item.image}
@@ -67,9 +94,31 @@ function Management() {
                       objectFit="cover"
                     />
                   </div>
-                  <div className="card-body text-white" style={{ background: 'teal' }}>
-                    <h5 className="card-title fw-bold">{item.title}</h5>
-                    <p className="card-text">{item.description}</p>
+                  <div
+                    className="card-body text-white"
+                    style={{ background: 'teal', minHeight: '130px' }}
+                  >
+                    <h5
+                      className="card-title fw-bold"
+                      style={{
+                        textAlign: 'center',
+                        marginBottom: '8px',
+                      }}
+                    >
+                      {item.title}
+                    </h5>
+                    <p
+                      className="card-text"
+                      style={{
+                        fontSize: '0.85rem',
+                        lineHeight: '1.4',
+                        marginBottom: 0,
+                        textAlign: 'center',
+                        wordSpacing: '2px',
+                      }}
+                    >
+                      {item.description}
+                    </p>
                   </div>
                 </div>
               </a>
@@ -90,11 +139,16 @@ function Management() {
           {services.map((item, index) => (
             <SwiperSlide key={index}>
               <Link href={item.link} passHref legacyBehavior>
-                <a style={{ textDecoration: 'none', color: 'inherit' }}>
-                  <div className="card border-0 shadow rounded overflow-hidden card-hover mb-4">
+                <a
+                  style={{
+                    textDecoration: 'none',
+                    color: 'inherit',
+                  }}
+                >
+                  <div className="card border-0 shadow rounded overflow-hidden mb-4">
                     <div
                       className="image-container"
-                      style={{ height: '220px', position: 'relative' }}
+                      style={{ height: '200px', position: 'relative' }}
                     >
                       <Image
                         src={item.image}
@@ -103,9 +157,31 @@ function Management() {
                         objectFit="cover"
                       />
                     </div>
-                    <div className="card-body text-white" style={{ background: 'teal' }}>
-                      <h5 className="card-title fw-bold">{item.title}</h5>
-                      <p className="card-text">{item.description}</p>
+                    <div
+                      className="card-body text-white"
+                      style={{ background: 'teal', minHeight: '150px' }}
+                    >
+                      <h5
+                        className="card-title fw-bold"
+                        style={{
+                          textAlign: 'center',
+                          marginBottom: '8px',
+                        }}
+                      >
+                        {item.title}
+                      </h5>
+                      <p
+                        className="card-text"
+                        style={{
+                          fontSize: '0.85rem',
+                          lineHeight: '1.4',
+                          marginBottom: 0,
+                          textAlign: 'center',
+                          wordSpacing: '2px',
+                        }}
+                      >
+                        {item.description}
+                      </p>
                     </div>
                   </div>
                 </a>
@@ -117,5 +193,3 @@ function Management() {
     </div>
   );
 }
-
-export default Management;

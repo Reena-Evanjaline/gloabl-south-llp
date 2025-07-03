@@ -1,8 +1,10 @@
 'use client';
 import React, { useState } from 'react';
+import dynamic from 'next/dynamic';
 import { Modal, Button, Form } from 'react-bootstrap';
-import ReactPlayer from 'react-player';
 
+// Import ReactPlayer dynamically with SSR disabled
+const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 
 function Banner() {
   const [show, setShow] = useState(false);
@@ -19,11 +21,15 @@ function Banner() {
   return (
     <>
       {/* Desktop View */}
-      <div className="desktop-view" style={{ position: 'relative', height: '97vh', overflow: 'hidden' }}>
+      <div
+        className="desktop-view d-none d-md-block"
+        style={{ position: 'relative', height: '100vh', overflow: 'hidden' }}
+      >
         <ReactPlayer
           url="/images/vi.mp4"
           playing
           loop
+          muted
           playsinline
           width="100%"
           height="100%"
@@ -42,38 +48,18 @@ function Banner() {
             },
           }}
         />
-
-        {/* <div
-          style={{
-            backgroundColor: '#00b7b1',
-            color: '#fff',
-            padding: '20px',
-            maxWidth: '600px',
-            borderBottomRightRadius: '40px',
-            borderTopLeftRadius: '8px',
-            position: 'relative',
-            zIndex: 1,
-            opacity: 0.8,
-          }}
-        >
-          <div style={{ transform: 'skewY(1deg)' }}>
-            <h1 className="fw-bold mb-4">
-              Expanding networks ...
-              <br />
-              Opening up new markets
-            </h1>
-            <button
-              className="btn btn-outline-light px-4 py-2 rounded-pill"
-              onClick={handleShow}
-            >
-              For Enquiries &nbsp; <span>&rarr;</span>
-            </button>
-          </div>
-        </div> */}
       </div>
 
       {/* Mobile View */}
-      <div className="mobile-view" style={{ position: 'relative', width: '100%', paddingTop: '56.25%', overflow: 'hidden' }}>
+      <div
+        className="mobile-view d-block d-md-none"
+        style={{
+          position: 'relative',
+          width: '100%',
+          paddingTop: '56.25%',
+          overflow: 'hidden',
+        }}
+      >
         <ReactPlayer
           url="/images/global.mp4"
           controls
@@ -98,28 +84,15 @@ function Banner() {
         />
       </div>
 
-      {/* Mobile Content Section */}
-      <div className="mobile-view"
-        style={{
-
-          color: 'black',
-
-          borderBottomRightRadius: '40px',
-          borderTopLeftRadius: '8px',
-          position: 'relative',
-          zIndex: 1,
-
-        }}
-      >
+      {/* Mobile Button */}
+      <div className="mobile-view text-center p-3 d-block d-md-none">
         <button
-          className="btn btn-primary  rounded-pill mt-3"
+          className="btn btn-primary rounded-pill mt-3"
           onClick={handleShow}
         >
           For Enquiries &nbsp; <span>&rarr;</span>
         </button>
-
       </div>
-
 
       {/* Enquiry Modal */}
       <Modal show={show} onHide={handleClose} centered size="lg">
