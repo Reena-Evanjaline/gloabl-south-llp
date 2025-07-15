@@ -74,7 +74,7 @@ export default function Navbar() {
                 <span onClick={handleShow} style={{ cursor: 'pointer' }}>
                   📧 Online Enquiry
                 </span>
-                <san className="ms-3">info@raceinnovations.in</san>
+                <san className="ms-3">info@globalsouth.co.in</san>
               </div>
 
               <div className="d-flex align-items-center">
